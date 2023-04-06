@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ProdutoService } from "./produtos.service";
-import { PokemonResult } from "./produto";
+import { PokemonResult } from "./PokemonResult";
 
 @Component({
   selector: "app-produtos",
@@ -14,9 +14,6 @@ export class ProdutosComponent implements OnInit {
   constructor(private produtoService: ProdutoService) {}
 
   ngOnInit() {
-    // this.produtoService.obterPokemons().subscribe((data: PokemonResult) => {
-    //   this.pokeResult = data;
-    // });
     this.produtoService.obterPokemons().subscribe(
       data => 
       {
