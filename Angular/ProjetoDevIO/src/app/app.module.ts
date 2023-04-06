@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { ProdutoService } from './produtos/produtos.service';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +24,19 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SobreComponent,
     ContatoComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ProdutosComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     [RouterModule.forRoot(rootRouterConfig)]
   ],
-  providers: [],
+  providers: [
+    ProdutoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

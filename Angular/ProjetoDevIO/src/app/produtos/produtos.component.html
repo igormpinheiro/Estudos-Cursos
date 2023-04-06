@@ -1,0 +1,11 @@
+<h2> {{ titPage }}</h2>
+
+<div *ngIf="pokeResult">
+    <p>Total de Pokemons: {{ pokeResult.count }}</p>
+    <p>Proximo: {{ pokeResult.next }}</p>
+    <p>Anterior: {{ pokeResult.previous }}</p>
+    <div *ngFor="let result of pokeResult.results" >
+        <p>{{ result.name }} - {{ result.url }}</p>
+    </div>
+  </div>
+  
