@@ -1,2 +1,3 @@
 # Estudos-Cursos
-Repositório onde ficam projetos realizados em cursos e tbm meus estudos
+
+Repositório para centralizar os projetos desenvolvidos ao longo de diversos cursos e tbm meus estudos.

@@ -1,0 +1,9 @@
+{
+    "CompileOptions": {
+        "outDir": "./dist", /*onde será gerado o código em JS*/
+        "module": "commonjs", /*gerar JS formato commonjs que é o q os Browsers entendem */
+        "target": "ES2019", /* qdo gerar o JS, gerar no formato ES2019 (http:node.green). Deve ser suportado pelo servidor*/
+        "esModuleInterop": true, /* */
+        "allowJS": true /*se tiver arqs de config em JS ao inves de JSON, deve permitir tbm*/
+    }
+}
