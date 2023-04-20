@@ -4,12 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <h1 class="bg-gray-100">
+    <div class="flex h-screen">
+      <!-- Barra lateral -->
+      <div class="w-64 bg-white shadow-md">
+        <div class="p-6">
+          <h1 class="text-2xl font-semibold">Admin Dashboard</h1>
+        </div>
+        <nav>
+          <a href="#" class="block px-6 py-3 bg-gray-200">Início</a>
+          <a href="#" class="block px-6 py-3">Usuários</a>
+          <a href="#" class="block px-6 py-3">Configurações</a>
+          <a href="#" class="block px-6 py-3">Relatórios</a>
+        </nav>
+      </div>
+      
+      <!-- Conteúdo principal -->
+      <div class="flex-1 p-8">
+        <h2 class="text-xl font-semibold mb-4">Resumo</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Cartões de resumo -->
+          <div class="bg-white p-4 rounded shadow-md">
+            <h3 class="text-lg font-semibold">Usuários</h3>
+            <p class="text-2xl">1.234</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow-md">
+            <h3 class="text-lg font-semibold">Vendas</h3>
+            <p class="text-2xl">R$ 12.345,00</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow-md">
+            <h3 class="text-lg font-semibold">Pedidos</h3>
+            <p class="text-2xl">567</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow-md">
+            <h3 class="text-lg font-semibold">Produtos</h3>
+            <p class="text-2xl">89</p>
+          </div>
+        </div>
+  
+        <!-- Seção de tabelas e gráficos -->
+        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded shadow-md">
+            <!-- Tabela ou gráfico aqui -->
+            <h3 class="text-lg font-semibold mb-4">Tabela de Usuários</h3>
+          </div>
+          <div class="bg-white p-4 rounded shadow-md">
+            <!-- Tabela ou gráfico aqui -->
+            <h3 class="text-lg font-semibold mb-4">Gráfico de Vendas</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   
   <script src="/dist/flowbite.min.js"></script>
 </body>
