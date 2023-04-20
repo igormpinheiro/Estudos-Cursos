@@ -12,3 +12,12 @@
   height: 50px;
   text-align: center;
 } 
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  max-width: 400px;
+}

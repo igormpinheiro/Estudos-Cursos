@@ -7,7 +7,11 @@ import { MenuComponent } from './navegacao/menu/menu.component';
 import { FooterComponent } from './navegacao/footer/footer.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
+
+
+
 
 
 @NgModule({
@@ -16,11 +20,13 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     FooterComponent,
     HomeComponent,
-    SobreComponent
+    SobreComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
