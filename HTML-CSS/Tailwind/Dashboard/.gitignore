@@ -1,0 +1,10 @@
+/node_modules
+/coverage
+/cli
+/lib
+/peers
+/example
+/dist
+.vscode
+.DS_Store
+.parcel-cache
